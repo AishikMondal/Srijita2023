@@ -1,0 +1,344 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&amp;family=Creepster&amp;family=Oleo+Script+Swash+Caps:wght@400;700&amp;family=Press+Start+2P&amp;family=Satisfy&amp;display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Srijita's Birthday Website</title>
+  <style>
+    
+    /* CSS Styles */
+    body {
+      background: linear-gradient(69deg, #EB6E80 ,#E24E42);
+      background-size: 600% 600%;
+      animation: gradientBackground 10s ease infinite;
+      font-family: Arial, sans-serif;
+      display: grid;
+	
+	
+/*	background: 
+		repeating-linear-gradient(45deg, 
+			#fecfef 0 $l, #ff9a9e   0 2.5*$l);
+	filter: drop-shadow(4px 4px 13px rgba(#000, .65))
+}
+		repeating-linear-gradient(45deg, 
+			#ff758c  0 $l,  #ff7eb3 0 2.5*$l);
+	filter: drop-shadow(4px 4px 13px rgba(#000, .65))
+} */
+    }
+
+    @keyframes gradientBackground {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    
+    .banner {
+      background: rgba( 255, 255, 255, 0.25 );
+      background-image: linear-gradient(to right, #B4D8C0,#43C0F6);
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+  /*box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  background-image: linear-gradient(to right, #ff00de, #00bcd4);
+  background-size: cover;
+  backdrop-filter: blur(10px);*/
+  border-radius: 20px;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+        font-family: 'Satisfy', cursive;
+      
+
+}
+
+    .banner h1 {
+      display: inline-block;
+      animation: neon 1.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes neon {
+      0% {
+        text-shadow: 0 0 5px #ff00de, 0 0 20px #ff00de, 0 0 30px #ff00de;
+      }
+      100% {
+        text-shadow: 0 0 5px #f50057, 0 0 20px #f50057, 0 0 30px #f50057;
+      }
+    }
+    .image-box {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .image-box img {
+     
+        width: 200px;
+  height: 250px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    }
+
+    .quotes-container {
+    
+         position: relative;
+      display: flex;
+        justify-content:center;
+      align-items:center;
+      display:inline-block;
+      
+       background-color:#393d42;
+    }
+
+    .quote-box {
+        background-color: #393d42;
+    display: flex;
+    top: 20vh;
+    left: 50vw;
+    position: absolute;
+    display: flex;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    color: #fff;
+    font-style: italic;
+    animation: shine 2s infinite;
+    display: inline;
+    width: 90%
+      
+    }
+  
+
+    .love-letter {
+      margin: 20px auto;
+      max-width: 600px;
+      text-align: justify;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      background-color: #fff;
+      color: #333;
+      font-family: "Segoe Script", cursive;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      position: relative;
+          font-family: 'Pacifico', cursive;
+      font-size:20px;
+      font-weight:900;
+      
+    }
+    .msg
+
+    .love-letter:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 3px;
+      background-color: #ff00de;
+      animation: heartbeat 1.5s ease-in-out infinite;
+    }
+
+    @keyframes heartbeat {
+      0% {
+        transform: translate(-50%, -50%) scale(1);
+      }
+      50% {
+        transform: translate(-50%, -50%) scale(1.2);
+      }
+      100% {
+        transform: translate(-50%, -50%) scale(1);
+      }
+    }
+ .question-box {
+      margin: 20px auto;
+      max-width: 400px;
+      text-align: center;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      background-color: #fff;
+      color: #333;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+strong{
+      background-image: linear-gradient(90deg,red,blue);
+    background-clip: text;
+    color: white;
+    margin: 10px;
+    font-family: 'Monoton', cursive;
+    font-size: 23px;
+}
+}
+    .question-box h3 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .btn-yes,
+    .btn-no {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 10px;
+      border: none;
+      border-radius: 20px;
+      font-size: 18px;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-yes {
+      background-color: #00bcd4;
+    }
+
+    .btn-no {
+      background-color: #f50057;
+    }
+    /* Dark Mode */
+    body.dark-mode {
+      background: linear-gradient(45deg, #333, #666, #999, #000);
+      background-size: 600% 600%;
+      animation: gradientBackgroundDark 10s ease infinite;
+      color: #fff;
+    }
+
+    @keyframes gradientBackgroundDark {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    body.dark-mode .banner {
+      background-image: linear-gradient(to right, #ff00de, #009688);
+    }
+
+    body.dark-mode .quote-box {
+      border-color: rgba(255, 255, 255, 0.5);
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #fff;
+    }
+
+    body.dark-mode .love-letter {
+      background-color: #333;
+      border-color: #fff;
+      color: #fff;
+    }
+    @keyframes shine{
+    30%{
+        border-image: linear-gradient(10deg,#f00,#0f0,#00f,#ff0,#0ff,#f0f);
+        border-image-slice: 1;
+    }
+    60%{
+        border-image: linear-gradient(45deg,#f00,#050,#00f,#ff0,#0ff,#ff);
+        border-image-slice: 1;
+    }
+    0%{
+        border-image: linear-gradient(-45deg,#f20,#0f0,#00f,#ff0,#0ff,#f0f);
+        border-image-slice: 1;
+    }
+    100%{
+        border-image: linear-gradient(90deg,#f00,#0f0,#00f,#ff0,#0ff,#f0f);
+        border-image-slice: 1;
+    }
+  }
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <h1>Happy birthday, Sriju!</h1>
+    
+  </div>
+
+  <div class="image-box">
+    <img src="sample2.jpg" alt="Srijita's Picture">
+    <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0">
+      <clipPath id="heart-shape" clipPathUnits="objectBoundingBox">
+        <path d="M0.5,0C0.197,0,0,0.197,0,0.5c0,0.293,0.186,0.5,0.305,0.695c0.266,0.373,0.609,0.854,1.195,1.426 c1.063,0.947,2.715,2.251,3.5,2.79c0.785-0.539,2.437-1.843,3.5-2.79c0.586-0.572,0.929-1.053,1.195-1.426 C0.814,1,1,0.793,1,0.5C1,0.197,0.803,0,0.5,0z"/>
+      </clipPath>
+    </svg>
+  </div>
+
+  <div class="question-box">
+    <h3>Do you love me?</h3>
+    <button class="btn-yes">Yes</button>
+    <button class="btn-no" onclick="run()">No</button>
+  </div>
+
+  <div class="love-letter" style="display: none;">
+    <h2>Letter to Sriju</h2>
+    <p>Dear Srijita,</p>
+    <p>Wishing you the happiest 18th birthday. May this day be as extraordinary as you are.</p>
+    <p>🎉🎈 Great wishes to you on your 18th birthday! 🥳 I wish you a happy, healthy, and successful life ahead. 🌟 Time flies, and here we are again, on this special and glamorous day, as you enter adulthood. In just one year, you'll be facing the ups and downs of your chosen career path. But don't worry, I have complete faith in you! 🌠 God has already blessed you with incredible potential, making you stand out. 🙌
+
+Our hearts are filled with admiration for you, including mine, your parents, and those closest to you. Although I'm sorry we won't be able to celebrate together this year, I sincerely hoped to be part of your special day for the first time. 🎁 However, I'm confident that your uncle will recover soon, and you'll have the opportunity to celebrate your birthday with the most valuable man in your life. 💖
+
+I am grateful that in just one year, you have taught me how to embrace change. Despite the pressures and responsibilities we both carry, the distance between us has sometimes felt unbearable. I have witnessed your hard work and determination for a brighter future, as well as your unwavering willpower to make your parents' dreams come true. Sometimes, I can't help but feel remorseful for taking up too much of your precious time, not realizing the mistakes I made. But I promise to make amends and court you once again, with you being the main character and the kind-hearted one who taught me to put my ego aside and learn from our mistakes. 🌸
+
+There's still a unique vibe I feel on this day, and perhaps it's for one simple reason: I kindly ask for your togetherness without excessive flattery. 🌻 Putting everything else aside, this day is truly yours, even though it's not easy for me to let go. But trust me, everything will be fine. Isn't it silly of me to feel this way shamelessly, except for asking you for something big? 😅 Anyway, cheers to you, my love! Lots of love and positive wishes for your life. 🥂✨ I hope you understand my plea and know how much you mean to me.</p>
+    <p> yours,</p>
+    <p>Aishik</p>
+    <br><strong>"
+দূর হতে আমি তারে সাধিব 💔😔
+গোপনে বিরহডোরে বাঁধিব 🌙🌸🔒
+
+বাঁধন-বিহীন সেই, যে বাঁধন অকারণ 😔💔🚫"</strong>
+  </div>
+
+  <div class="quotes-container">
+   <!-- <div class="quote-box">"Love is not just looking at each other, it's looking in the same direction." - Antoine de Saint-Exupéry</div>
+    <div class="quote-box">"The best thing to hold onto in life is each other." - Audrey Hepburn</div>-->
+    <div class="quote-box">"Through the trials we face, my love remains steadfast. Though you sought distance, my heart yearns for your embrace. In the depths of pain, our love's flame still burns bright. On this special day, I offer a wish, that time heals our wounds and rekindles our love's light. Happy birthday, my love, may our bond grow stronger, as we navigate this journey together, forever."</div>
+  </div>
+
+  <!-- JavaScript for toggling dark mode, displaying love letter, and handling question buttons -->
+  <script>
+    const body = document.querySelector('body');
+    const banner = document.querySelector('.banner');
+    const questionBox = document.querySelector('.question-box');
+    const loveLetter = document.querySelector('.love-letter');
+    const quotesContainer = document.querySelector('.quotes-container');
+
+    
+    function toggleDarkMode() {
+      body.classList.toggle('dark-mode');
+    }
+
+    function showLoveLetter() {
+      questionBox.style.display = 'none';
+      loveLetter.style.display = 'block';
+      quotesContainer.style.display = 'block';
+    }
+
+    const btnYes = document.querySelector('.btn-yes');
+    const btnNo = document.querySelector('.btn-no');
+
+    btnYes.addEventListener('click', showLoveLetter);
+    btnNo.addEventListener('click', function() {
+      alert('That\'s okay. Take your time!');
+          window.location.href = 'https://aishikmondal.github.io/MySriju/';
+    });
+  </script>
+</body>
+</html>

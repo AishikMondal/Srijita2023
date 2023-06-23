@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Happy 18th Birthday, Srijita!</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Lobster', cursive;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding:0;
+      overflow: hidden;
+      top:-5%;
+    }
+
+    .neon-text {
+      font-size: 40px;
+      text-shadow: 0 0 5px #f00, 0 0 10px #f00, 0 0 20px #f00;
+    }
+
+    .cool-text {
+      font-family: 'Pacifico', cursive;
+      font-weight: bold;
+      font-size: 60px;
+      color: #fff;
+    }
+
+    #button {
+      width: 250px;
+      height: 80px;
+     top:8%;
+      position: relative;
+      background-color: transparent;
+      border-radius: 40px;
+      color: #fff;
+      font-size: 24px;
+      cursor: pointer;
+      box-shadow: 0 0 10px #00f;
+      
+    }
+
+    @keyframes heartbeat {
+      0% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.1);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    #button:hover {
+      box-shadow: 0 0 10px #00f;
+    }
+
+    #pic-container {
+      position: relative;
+      margin-top: 50px;
+      width: 400px;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      
+    }
+
+    #pic-frame {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      fill: none;
+      stroke: #f00;
+      stroke-width: 5px;
+      filter: drop-shadow(0px 0px 20px #f00);
+      animation: heartbeat 1.5s infinite;
+      
+    }
+
+    #pic {
+      width: 90%;
+      height: 90%;
+      object-fit: cover;
+      
+    }
+
+    #hearts-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 80%;
+    }
+
+   
+  .heart {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      position: relative;
+      transform: rotate(-45deg);
+   
+    }
+    
+    .heart:before,
+    .heart:after {
+      content: "";
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      border-radius: 50%;
+      position: absolute;
+    }
+    
+    .heart:before {
+      top: -50px;
+      left: 0;
+    }
+    
+    .heart:after {
+      top: 0;
+      left: 50px;
+    }
+    .heart.left {
+      margin-right: 50px;
+      left:-40%;
+      
+    }
+
+    .heart.right {
+      margin-left: 50px;
+      right: -35%;
+    }
+
+    .confetti {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #f00;
+      animation: confetti 3s infinite;
+    }
+#craffetti{
+  color:greenyellow;
+  top:-7%;
+  position: relative;
+
+  
+  font-size: 1.15em;
+}
+    @keyframes confetti {
+      0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+        opacity: 0;
+      }
+
+      100% {
+        transform: translate(-50%, 100vh) rotate(360deg);
+        opacity: 1;
+      }
+    }
+
+    /* Responsive Font Sizes */
+  /*  @media only screen and (max-width: 600px) {
+      .neon-text {
+        font-size: 24px;
+      }
+
+      .cool-text {
+        font-size: 36px;
+      }
+
+      #button {
+        font-size: 18px;
+      }
+
+      #pic-container {
+        width: 300px;
+        height: 300px;
+      }
+
+      #pic {
+        width: 80%;
+        height: 80%;
+      }
+    }*/
+  </style>
+</head>
+
+<body>
+  <h1 class="neon-text">Happy <span class="cool-text">18th Birthday</span>, <span
+      style="font-size: 80px; font-weight: bold; font-family: 'Pacifico', cursive;">Srijita</span>!</h1>
+  <div id="pic-container">
+    <svg id="pic-frame" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      
+      <image id="pic" href="sample.jpg" width="100%" height="100%" clip-path="url(#pic-clip)" />
+    </svg>
+    <div id="hearts-container">
+      <div class="heart left"></div>
+      <div class="heart right"></div>
+    </div>
+  </div>
+  <button id="button">Wanna see something more</button>
+  <p id="craffetti">Designed By Mango for Habibi</p>
+
+  <script>
+    const button = document.getElementById('button');
+    button.addEventListener('click', () => {
+      window.location.href = 'index1.html'; // Replace with the desired webpage address
+    });
+
+    // Generate random confetti
+    const container = document.body;
+    const confettiColors = ['#ff0', '#0f0', '#00f', '#f0f', '#f90'];
+    const numConfetti = 100;
+
+    for (let i = 0; i < numConfetti; i++) {
+      const confetti = document.createElement('div');
+      confetti.classList.add('confetti');
+      confetti.style.left = `${Math.random() * 100}%`;
+      confetti.style.animationDelay = `${Math.random() * 3}s`;
+      confetti.style.backgroundColor = confettiColors[Math.floor(Math.random() * confettiColors.length)];
+      container.appendChild(confetti);
+    }
+    const craf = document.getElementById('craffetti');
+    craf.addEventListener('click', () => {
+      window.location.href = 'http://www.instagram.com/__crison__.py/';
+  </script>
+</body>
+
+</html>
